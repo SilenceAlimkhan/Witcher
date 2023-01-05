@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.witcher{
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header a{
+    text-decoration: none;
+    font-size: 100%;
+    margin-left: 20px;
+    color:black;
+}
+
+header{
+    background-color: gray;
+    text-align: center;
+}
+
+header img{
+    width: 3.3%;
+    height: 3.3%;
+}
+
+.header-links{
+    padding: 15px 0;
+}
+
+.header-links a{
+    color: #0f0f0f;
+}
+
+.header-links a:hover{
+    color: white;
+    transition: all 0.6s ease;
+}
+.welcome{
+    background-image: url('../Geralt/witcher4.jpg');
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    color: white;
+}
+
+.welcome-inner{
+    text-align: center;
+    padding: 300px 0;
+
+	
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+
+.welcome-inner._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+
+._anim-show{
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0.8s;
+}
+
+._anim-show._active,
+._active ._anim-show {
+	opacity: 1;
+	transform: translate(0px, 0px);
+}
+
+#welcome{
+    background-color:grey;
+    opacity:0.9;
+}
+
+.welcome-inner h5{
+    font-weight: 400;
+	font-size: 16px;
+	line-height: 19.5px;
+    margin-left: 60px;
+}
+
+.welcome-inner h1{
+    font-weight: 900;
+	font-size: 48px;
+	line-height: 64px;
+    margin-left: 60px;
+}
+
+.welcome-inner h1:hover {
+    background: white;
+    color: #000;
+}
+
+.description{
+    background-color: rgb(169, 169, 169)
+}
+
+.description-inner{
+    padding: 80px 0;
+}
+
+.description-inner h2{
+    font-size: 48px;
+    line-height: 1.0416666667;
+    font-weight: 500;
+}
+
+.book{
+    background-color: rgb(169, 169, 169)
+}
+
+.book-inner{
+    padding: 40px 0;
+    position: relative;
+}
+
+.book-inner h2{
+    font-size: 48px;
+    line-height: 1.0416666667;
+    font-weight: 500;
+}
+
+.book-info{
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 10;
+}
+
+.book-text{
+    padding-right: 60px;
+}
+
+.book-img{
+    width: 50%;
+	border-radius: 40px;
+	height: 50%;
+}
+
+
+.author{
+    background-color: rgb(169, 169, 169)
+}
+
+.author-inner{
+    padding: 40px 0;
+    position: relative;
+}
+
+.author-inner h2{
+    font-size: 48px;
+    line-height: 1.0416666667;
+    font-weight: 500;
+}
+
+.author-info{
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 10;
+}
+
+.author-text{
+    padding-left: 60px;
+}
+
+.author-img{
+    width: 50%;
+	border-radius: 40px;
+	height: 50%;
+}
+
+.footer{
+	background-color: #0f0f0f;
+}
+.footer-inner{
+	text-align: center;
+	padding: 50px 0	;
+    color:rgb(169, 169, 169);
+}
+
+.footer-input{
+	width: 448px;
+	border: 3px solid rgb(169, 169, 169);
+	display: flex;
+	margin: 0 auto;
+	border-radius: 40px;
+	overflow: hidden;
+	box-shadow: 4px 4px 30px 4px #999999;
+}
+
+.footer-input input{
+	padding: 12px 36px;
+	width: 66.2%;
+	outline: none;
+	font-size: 18px;
+	border: none;
+}
+
+.footer-input span{
+	width: 40%;
+	padding: 12px;
+	background-color: rgb(169, 169, 169);
+	color: white;
+	font-size: 18px;
+}
+
+.footer-e-mail{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(169, 169, 169);
+    text-transform: uppercase;
+    text-align: right;
+    padding: 15px 0;
+}
+
+.footer-ll{
+    background-color: #0f0f0f;
+}
+
+.footer-l{
+    color:rgb(169, 169, 169);
+    text-align:center;
+}
+
+.footer-title{
+    color:rgb(169, 169, 169);
+    text-align: right;
+    margin: 15px 0;
+}
+
+.footer-list{
+    text-align: right;
+}
+
+.game{
+	background-color: #0f0f0f;
+}
+
+.game-inner{
+	padding: 80px 0;
+	text-align: center;
+}
+
+.game-inner h2{
+    font-size: 48px;
+    line-height: 1.0416666667;
+    font-weight: 500;
+    color:rgb(169, 169, 169);
+}
+
+.game-witcher{
+	width: 33%;
+	display: flex;
+	justify-content: center;
+}
+
+.game-witcher img{
+	width: 90%;
+    height: 90%;
+	border-radius: 40px;
+}
+
+.game-inner p{
+	font-size: 20px;
+    color:rgb(169, 169, 169);
+}
+
+.game-list{
+	padding: 70px 0 55px;
+	display: flex;
+}
+
+.game-inner button{
+	padding: 30px 76px;
+	color: black;
+	border: none;
+	background: rgb(169, 169, 169);
+	border-radius: 40px;
+    font-size: 20px;
+}
+
+.CD{
+    background-image: url('../Geralt/witcher12.jpg');
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    color:  white;
+}
+
+.CD-inner h5{
+    font-weight: 400;
+	font-size: 16px;
+	line-height: 19.5px;
+    margin-left: 60px;
+}
+
+.CD-inner h1{
+    font-weight: 900;
+	font-size: 48px;
+	line-height: 64px;
+    margin-left: 60px;
+}
+
+.CD-inner{
+    text-align: center;
+    padding: 300px 0;
+}
+
+.CD h1:hover {
+    background: white;
+    color: #000;
+}
+
+.netflix{
+    background-image: url('../Geralt/witcher14.jpg');
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    color:  white;
+}
+
+.netflix-inner h5{
+    font-weight: 400;
+	font-size: 16px;
+	line-height: 19.5px;
+    margin-left: 60px;
+}
+
+.netflix-inner h1{
+    font-weight: 900;
+	font-size: 48px;
+	line-height: 64px;
+    margin-left: 60px;
+}
+
+.netflix-inner{
+    text-align: center;
+    padding: 300px 0;
+}
+
+.netflix h1:hover {
+    background: white;
+    color: #000;
+}
+
+.tv{
+    background-color: rgb(169, 169, 169);
+	margin:80px 0;
+}
+
+.tv-inner p{
+	font-size: 18px;
+	color:  #0f0f0f;
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+.tv-box{
+	background-image: url('../Geralt/witcher13.jpg');
+	height:  480px;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tv-button span{
+	color: white;
+	display: flex;
+	align-items: center;
+	border: 1px solid #0f0f0f;
+	padding: 26px;
+	border-radius: 100px;
+}
+
+.tv-button span img{
+	text-align: center;
+}
+
+.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:  100%;
+	height: 120vh;
+	display: none;
+}
+
+.modal-close{
+	height: 10vh;
+	background-color: rgb(169, 169, 169);
+	text-align: right;
+}
+
+.sub{
+	background-color: #e0e0e0;
+}
+.sub-inner{
+	text-align: center;
+	padding: 80px 0	;
+}
+
+.sub-input{
+	width: 448px;
+	/*border: 1px solid black;*/
+	display: flex;
+	margin: 0 auto;
+	border-radius: 40px;
+	overflow: hidden;
+	box-shadow: 4px 4px 30px 4px #999999;
+}
+
+.sub-input input{
+	padding: 12px 36px;
+	width: 66.2%;
+	outline: none;
+	font-size: 18px;
+	border: none;
+}
+
+.sub-input span{
+	width: 40%;
+	padding: 12px;
+	background-color: black;
+	color: white;
+	font-size: 18px;
+}
+
+.footer{
+	background-color: #0f0f0f;
+}
+
+.footer-content{
+	padding: 70ps 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-title{
+	font-weight: bold;
+	font-size: 18px;
+	color: grey;
+}
+
+.footer-item{
+	color: red;
+	font-size: 10px;
+}
+
+.footer-list{
+	list-style: none;
+	padding-left: 0px;
+	padding: 5px 0;
+}
+
+.footer-l{
+	padding: 30px 0;
+	text-align: center;
+	border-top: 1px #999999;
+	color: white;
+}
+
+.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:  100%;
+	height: 90vh;
+	display: none;
+}
+
+.modal-close{
+	height: 10vh;
+	background-color: grey;
+	text-align: right;
+}
+
+
+.shop-list{
+	padding: 80px 0 60px;
+	display: flex;
+}
+
+.shop-witcher{
+	width: 33%;
+	display: flex;
+	justify-content: center;
+	z-index: 1;
+}
+
+.shop-witcher img{
+	width: 90%;
+    height: 90%;
+	border-radius: 40px;
+}
+
+.shop-witcher:hover{
+	background:#0f0f0f;
+	transition: all 0.6s ease;
+	box-shadow: inset 0 0 0 23px #0f0f0f;
+}
+
+
+.support{
+    background-color: rgb(169, 169, 169)
+}
+
+.support-inner{
+    padding: 40px 0;
+    position: relative;
+}
+
+.support-inner h2{
+    font-size: 24px;
+    line-height: 1.0416666667;
+    font-weight: 500;
+}
+
+.support-info{
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 10;
+}
+
+.support-text{
+    padding-left: 60px;
+}
+
+.support-img{
+    width: 70%;
+	border-radius: 40px;
+	height: 70%;
+}
+
+.support-inner{
+	text-align: center;
+	padding: 50px 0	;
+    color:#b30202;
+}
+
+.support-input{
+	text-align: right;
+	width: 448px;
+	border: 3px solid #b30202;
+	display: flex;
+	margin: 0 40px;
+	border-radius: 40px;
+	overflow: hidden;
+	box-shadow: 4px 4px 30px 4px #b30202;
+}
+
+.support-input input{
+	padding: 12px 36px;
+	width: 66.2%;
+	outline: none;
+	font-size: 18px;
+	border: none;
+}
+
+.support-input span{
+	width: 40%;
+	padding: 15px;
+	text-align: center;
+	background-color: rgb(158, 3, 3);
+	color: white;
+	font-size: 18px;
+}
+
+.quotes{
+    background-color: rgb(169, 169, 169)
+}
+
+.quotes-inner{
+    padding: 80px 0;
+	text-align: center;
+}
+
+.quotes-inner h2{
+    font-size: 48px;
+    line-height: 1.0416666667;
+    font-weight: 500;
+}
+
+@media (max-width: 720px) {
+	.witcher{
+		width: auto;
+		margin: 0 10px;
+	}
+
+	.header-links{
+		font-size: 18px;
+	}
+
+	.welcome-inner h1{
+		font-weight: 600px;
+		font-size:  32px;
+		line-height: 40px;
+	}
+
+	.welcome-inner h5{
+		font-size: 10px;
+		font-weight: 100px;
+	}
+
+	.welcome-inner {
+		padding: 50px 0;
+	}
+
+	.description-inner h2{
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.description-inner p{
+		font-size: 14px;
+	}
+
+	.book-text h2{
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.book-text p{
+		font-size: 14px;
+	}
+
+	.book-info img{
+		width:40%;
+	}
+
+	.author-text h2{
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.author-text p{
+		font-size: 14px;
+	}
+
+	.author-info img{
+		width:40%;
+	}
+
+	.footer-input{
+		width: 60%;
+	}
+
+	.footer-input input{
+		font-size: 10px;
+	}
+
+	.footer-input span{
+		font-size: 10px;
+	}
+
+	.CD-inner{
+		padding: 50px 0;
+	}
+
+	.CD-inner h1{
+		font-weight: 600px;
+		font-size:  32px;
+		line-height: 40px;
+	}
+
+	.CD-inner h5{
+		font-size: 10px;
+		font-weight: 100px;
+	}
+
+	.game-inner h2{
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.game-inner p{
+		font-size: 10px;
+	}
+
+	.netflix-inner{
+		padding: 50px 0;
+	}
+
+	.netflix-inner h1{
+		font-weight: 600px;
+		font-size:  32px;
+		line-height: 40px;
+	}
+
+	.netflix-inner h5{
+		font-size: 10px;
+		font-weight: 100px;
+	}
+
+	.tv-video h2{
+		font-size: 24px;
+		line-height: 32px;
+	}
+	
+	.tv-video p{
+		font-size: 12px;
+	}
+
+	.tv-box{
+		padding: 5px 0;
+	}
+
+	.tv-button img{
+		padding: 10px 0;
+	}
+}
